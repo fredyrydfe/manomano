@@ -56,7 +56,7 @@ This automation was created on Postman.
  
 ## Preconditions
 
-To run the API automation, you need to have installed the Postman tool https://www.postman.com/downloads/
+To run the API automation, you need to have installed Postman https://www.postman.com/downloads/
 
 ## Setup
 
@@ -65,7 +65,15 @@ You should find the JSON file "Purgomalum API Test Automation.postman_collection
 Then, you have to open Postman and you need to import the collection store in the JSON file "Purgomalum API Test Automation.postman_collection.json".
 
 
+## Run API tests
 
+When you have imported the collection in Postman, you have to click on more options in the collection, and then click on the Run button.
+
+And the last step is to run the collection.
+
+
+
+Then you should see the following results:
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
