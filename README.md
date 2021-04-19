@@ -46,6 +46,7 @@ allure serve output
 ```
 It creates one XML file per Feature and saves it in the output folder. And a webpage is expected to open with the results.
 
+![alt text](https://github.com/fredyrydfe/manomano/blob/main/Allure%20report.JPG)
 
 # (API Automation) Purgomalum.com
 
@@ -69,11 +70,15 @@ Then, you have to open Postman and you need to import the collection store in th
 
 When you have imported the collection in Postman, you have to click on more options in the collection, and then click on the Run button.
 
+![alt text](https://github.com/fredyrydfe/manomano/blob/main/postman%20-%20run%20tests.JPG)
+
 And the last step is to run the collection.
 
-
+![alt text](https://github.com/fredyrydfe/manomano/blob/main/postman%20-%20run%20tests%202.JPG)
 
 Then you should see the following results:
+
+![alt text](https://github.com/fredyrydfe/manomano/blob/main/postman%20-%20report.JPG)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
