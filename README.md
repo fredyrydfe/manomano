@@ -18,7 +18,7 @@ This is a playground for your first steps in testing, so instead of installing i
 To clone the project:
 
 ```bash
-git clone git@github.com:codecept-js/examples.git
+git clone https://github.com/fredyrydfe/manomano.git
 ```
 
 To install the dependencies:
