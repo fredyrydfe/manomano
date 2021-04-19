@@ -1,0 +1,383 @@
+{
+	"info": {
+		"_postman_id": "916b7246-7bdb-4955-9f36-2d7e7bdd5d44",
+		"name": "Purgomalum API Test Automation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 - Execute API call with valid required parameters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad3cf6d5-5352-40a0-bf51-00266d3de1a2",
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body contains the parameter 'result'\", function () {\r",
+							"  pm.expect(pm.response.text()).to.include(\"result\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'result' is a string\", function () {\r",
+							"    pm.expect(responseJson.result).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'result' has the expected value\", function () {\r",
+							"    pm.expect(responseJson.result).to.eql(\"this is some test input\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type header is present\", () => {\r",
+							"  pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All expected headers are present\", () => {\r",
+							"  pm.response.to.have.header(\"Content-Type\");\r",
+							"  pm.response.to.have.header(\"Access-Control-Allow-Origin\");\r",
+							"  pm.response.to.have.header(\"X-Cloud-Trace-Context\");\r",
+							"  pm.response.to.have.header(\"Date\");\r",
+							"  pm.response.to.have.header(\"Server\");\r",
+							"  pm.response.to.have.header(\"Content-Length\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", () => {\r",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.purgomalum.com/service/json?text=this is some test input",
+					"protocol": "https",
+					"host": [
+						"www",
+						"purgomalum",
+						"com"
+					],
+					"path": [
+						"service",
+						"json"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "this is some test input"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Execute API call with valid required parameters AND valid optional parameters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad3cf6d5-5352-40a0-bf51-00266d3de1a2",
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body contains the parameter 'result'\", function () {\r",
+							"  pm.expect(pm.response.text()).to.include(\"result\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'result' is a string\", function () {\r",
+							"    pm.expect(responseJson.result).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'result' has the expected value\", function () {\r",
+							"    pm.expect(responseJson.result).to.eql(\"this is some test _____\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type header is present\", () => {\r",
+							"  pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All expected headers are present\", () => {\r",
+							"  pm.response.to.have.header(\"Content-Type\");\r",
+							"  pm.response.to.have.header(\"Access-Control-Allow-Origin\");\r",
+							"  pm.response.to.have.header(\"X-Cloud-Trace-Context\");\r",
+							"  pm.response.to.have.header(\"Date\");\r",
+							"  pm.response.to.have.header(\"Server\");\r",
+							"  pm.response.to.have.header(\"Content-Length\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", () => {\r",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.purgomalum.com/service/json?text=this is some test input&add=input&fill_char=_",
+					"protocol": "https",
+					"host": [
+						"www",
+						"purgomalum",
+						"com"
+					],
+					"path": [
+						"service",
+						"json"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "this is some test input"
+						},
+						{
+							"key": "add",
+							"value": "input"
+						},
+						{
+							"key": "fill_char",
+							"value": "_"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Execute API calls with invalid required parameter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad3cf6d5-5352-40a0-bf51-00266d3de1a2",
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body contains the parameter 'error'\", function () {\r",
+							"  pm.expect(pm.response.text()).to.include(\"error\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'error' is a string\", function () {\r",
+							"    pm.expect(responseJson.error).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'error' has the expected value\", function () {\r",
+							"    pm.expect(responseJson.error).to.eql(\"No Input\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All expected headers are present\", () => {\r",
+							"  pm.response.to.have.header(\"Content-Type\");\r",
+							"  pm.response.to.have.header(\"Access-Control-Allow-Origin\");\r",
+							"  pm.response.to.have.header(\"X-Cloud-Trace-Context\");\r",
+							"  pm.response.to.have.header(\"Date\");\r",
+							"  pm.response.to.have.header(\"Server\");\r",
+							"  pm.response.to.have.header(\"Content-Length\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", () => {\r",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.purgomalum.com/service/json?tet=this is some test input",
+					"protocol": "https",
+					"host": [
+						"www",
+						"purgomalum",
+						"com"
+					],
+					"path": [
+						"service",
+						"json"
+					],
+					"query": [
+						{
+							"key": "tet",
+							"value": "this is some test input"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Execute API calls with invalid optional parameter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad3cf6d5-5352-40a0-bf51-00266d3de1a2",
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body contains the parameter 'result'\", function () {\r",
+							"  pm.expect(pm.response.text()).to.include(\"result\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'result' is a string\", function () {\r",
+							"    pm.expect(responseJson.result).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'result' has the expected value\", function () {\r",
+							"    pm.expect(responseJson.result).to.eql(\"this is some test input\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type header is present\", () => {\r",
+							"  pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All expected headers are present\", () => {\r",
+							"  pm.response.to.have.header(\"Content-Type\");\r",
+							"  pm.response.to.have.header(\"Access-Control-Allow-Origin\");\r",
+							"  pm.response.to.have.header(\"X-Cloud-Trace-Context\");\r",
+							"  pm.response.to.have.header(\"Date\");\r",
+							"  pm.response.to.have.header(\"Server\");\r",
+							"  pm.response.to.have.header(\"Content-Length\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", () => {\r",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.purgomalum.com/service/json?text=this is some test input&add1=input&fill_char=_",
+					"protocol": "https",
+					"host": [
+						"www",
+						"purgomalum",
+						"com"
+					],
+					"path": [
+						"service",
+						"json"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "this is some test input"
+						},
+						{
+							"key": "add1",
+							"value": "input"
+						},
+						{
+							"key": "fill_char",
+							"value": "_"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 - Execute API calls with missing required parameter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad3cf6d5-5352-40a0-bf51-00266d3de1a2",
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body contains the parameter 'error'\", function () {\r",
+							"  pm.expect(pm.response.text()).to.include(\"error\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'error' is a string\", function () {\r",
+							"    pm.expect(responseJson.error).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Parameter 'error' has the expected value\", function () {\r",
+							"    pm.expect(responseJson.error).to.eql(\"No Input\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All expected headers are present\", () => {\r",
+							"  pm.response.to.have.header(\"Content-Type\");\r",
+							"  pm.response.to.have.header(\"Access-Control-Allow-Origin\");\r",
+							"  pm.response.to.have.header(\"X-Cloud-Trace-Context\");\r",
+							"  pm.response.to.have.header(\"Date\");\r",
+							"  pm.response.to.have.header(\"Server\");\r",
+							"  pm.response.to.have.header(\"Content-Length\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", () => {\r",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.purgomalum.com/service/json?",
+					"protocol": "https",
+					"host": [
+						"www",
+						"purgomalum",
+						"com"
+					],
+					"path": [
+						"service",
+						"json"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

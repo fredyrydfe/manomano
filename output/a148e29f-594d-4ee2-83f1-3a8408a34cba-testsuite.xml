@@ -1,0 +1,650 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1618847366432' stop='1618847408772'>
+    <name>Search product</name>
+    <title>Search product</title>
+    <test-cases>
+        <test-case start='1618847374181' status='passed' stop='1618847380979'>
+            <name>The non-registered user confirms the search functionality renders on the Home page</name>
+            <title>The non-registered user confirms the search functionality renders on the Home page</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1618847374200' status='passed' stop='1618847380602'>
+                    <name>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </name>
+                    <title>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847374200' status='passed' stop='1618847380566'>
+                            <name>I am on page "https://www.manomano.co.uk/"</name>
+                            <title>I am on page "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847380567' status='passed' stop='1618847380602'>
+                            <name>I wait url equals "https://www.manomano.co.uk/"</name>
+                            <title>I wait url equals "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847380602' status='passed' stop='1618847380796'>
+                    <name>When the non-registered user accepts the use of cookies </name>
+                    <title>When the non-registered user accepts the use of cookies </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847380602' status='passed' stop='1618847380616'>
+                            <name>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847380616' status='passed' stop='1618847380796'>
+                            <name>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847380796' status='passed' stop='1618847380799'>
+                    <name>And the non-registered user is viewing the Home page </name>
+                    <title>And the non-registered user is viewing the Home page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847380796' status='passed' stop='1618847380799'>
+                            <name>I see in title "ManoMano: Online DIY, home improvement and gardening products"</name>
+                            <title>I see in title "ManoMano: Online DIY, home improvement and gardening products"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847380799' status='passed' stop='1618847380971'>
+                    <name>Then the non-registered user confirms the Search field is present </name>
+                    <title>Then the non-registered user confirms the Search field is present </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847380799' status='passed' stop='1618847380960'>
+                            <name>I click "#searchbar"</name>
+                            <title>I click "#searchbar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847380960' status='passed' stop='1618847380971'>
+                            <name>I see element "#searchbar"</name>
+                            <title>I see element "#searchbar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847380971' status='passed' stop='1618847380979'>
+                    <name>And the non-registered user confirms the Search button is present </name>
+                    <title>And the non-registered user confirms the Search button is present </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847380971' status='passed' stop='1618847380979'>
+                            <name>I see element "#submit-form"</name>
+                            <title>I see element "#submit-form"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1618847381006' status='passed' stop='1618847386448'>
+            <name>The non-registered user searches without entering anything in the Search field</name>
+            <title>The non-registered user searches without entering anything in the Search field</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1618847381014' status='passed' stop='1618847382582'>
+                    <name>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </name>
+                    <title>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847381014' status='passed' stop='1618847382563'>
+                            <name>I am on page "https://www.manomano.co.uk/"</name>
+                            <title>I am on page "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847382563' status='passed' stop='1618847382582'>
+                            <name>I wait url equals "https://www.manomano.co.uk/"</name>
+                            <title>I wait url equals "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847382582' status='passed' stop='1618847382745'>
+                    <name>And the non-registered user allows the use of cookies </name>
+                    <title>And the non-registered user allows the use of cookies </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847382582' status='passed' stop='1618847382589'>
+                            <name>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847382589' status='passed' stop='1618847382745'>
+                            <name>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847382745' status='passed' stop='1618847382747'>
+                    <name>And the non-registered user is viewing the Home page </name>
+                    <title>And the non-registered user is viewing the Home page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847382745' status='passed' stop='1618847382747'>
+                            <name>I see in title "ManoMano: Online DIY, home improvement and gardening products"</name>
+                            <title>I see in title "ManoMano: Online DIY, home improvement and gardening products"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847382747' status='passed' stop='1618847383037'>
+                    <name>When the non-registered user does not enter any text in the Search field </name>
+                    <title>When the non-registered user does not enter any text in the Search field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847382748' status='passed' stop='1618847382914'>
+                            <name>I click "#searchbar"</name>
+                            <title>I click "#searchbar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847382914' status='passed' stop='1618847383037'>
+                            <name>I clear field "#searchbar"</name>
+                            <title>I clear field "#searchbar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847383037' status='passed' stop='1618847386446'>
+                    <name>And the non-registered user clicks on the Search button </name>
+                    <title>And the non-registered user clicks on the Search button </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847383037' status='passed' stop='1618847383442'>
+                            <name>I click "#submit-form"</name>
+                            <title>I click "#submit-form"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847383443' status='passed' stop='1618847386445'>
+                            <name>I wait 3</name>
+                            <title>I wait 3</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847386446' status='passed' stop='1618847386448'>
+                    <name>Then the non-registered user confirms the search functionality is not executed </name>
+                    <title>Then the non-registered user confirms the search functionality is not executed </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847386446' status='passed' stop='1618847386448'>
+                            <name>I see current url equals "https://www.manomano.co.uk/"</name>
+                            <title>I see current url equals "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1618847386468' status='passed' stop='1618847389344'>
+            <name>The non-registered user clears the search keyword</name>
+            <title>The non-registered user clears the search keyword</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1618847386478' status='passed' stop='1618847388412'>
+                    <name>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </name>
+                    <title>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847386478' status='passed' stop='1618847388406'>
+                            <name>I am on page "https://www.manomano.co.uk/"</name>
+                            <title>I am on page "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847388406' status='passed' stop='1618847388411'>
+                            <name>I wait url equals "https://www.manomano.co.uk/"</name>
+                            <title>I wait url equals "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847388412' status='passed' stop='1618847388577'>
+                    <name>And the non-registered user accepts the use of cookies </name>
+                    <title>And the non-registered user accepts the use of cookies </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847388412' status='passed' stop='1618847388420'>
+                            <name>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847388420' status='passed' stop='1618847388577'>
+                            <name>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847388577' status='passed' stop='1618847388579'>
+                    <name>And the non-registered user is viewing the Home page </name>
+                    <title>And the non-registered user is viewing the Home page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847388577' status='passed' stop='1618847388579'>
+                            <name>I see in title "ManoMano: Online DIY, home improvement and gardening products"</name>
+                            <title>I see in title "ManoMano: Online DIY, home improvement and gardening products"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847388579' status='passed' stop='1618847388885'>
+                    <name>And the non-registered user enters "battery" text in the Search field </name>
+                    <title>And the non-registered user enters "battery" text in the Search field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847388579' status='passed' stop='1618847388885'>
+                            <name>I fill field "#searchbar", "battery"</name>
+                            <title>I fill field "#searchbar", "battery"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847388885' status='passed' stop='1618847389325'>
+                    <name>When the non-registered user clicks on the Cancel option in the Search field </name>
+                    <title>When the non-registered user clicks on the Cancel option in the Search field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847388885' status='passed' stop='1618847389325'>
+                            <name>I click "#searchbar-basic-clear"</name>
+                            <title>I click "#searchbar-basic-clear"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847389325' status='passed' stop='1618847389344'>
+                    <name>Then the non-registered user confirms the information enter in the Search field is removed </name>
+                    <title>Then the non-registered user confirms the information enter in the Search field is removed </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847389325' status='passed' stop='1618847389344'>
+                            <name>I see attributes on elements "#searchbar", {"value":""}</name>
+                            <title>I see attributes on elements "#searchbar", {"value":""}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1618847389368' status='passed' stop='1618847396653'>
+            <name>The non-registered user searches a parameter that not matches the existing data</name>
+            <title>The non-registered user searches a parameter that not matches the existing data</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1618847389383' status='passed' stop='1618847391277'>
+                    <name>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </name>
+                    <title>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847389383' status='passed' stop='1618847391263'>
+                            <name>I am on page "https://www.manomano.co.uk/"</name>
+                            <title>I am on page "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847391264' status='passed' stop='1618847391277'>
+                            <name>I wait url equals "https://www.manomano.co.uk/"</name>
+                            <title>I wait url equals "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847391277' status='passed' stop='1618847391471'>
+                    <name>And the non-registered user accepts the use of cookies </name>
+                    <title>And the non-registered user accepts the use of cookies </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847391277' status='passed' stop='1618847391289'>
+                            <name>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847391289' status='passed' stop='1618847391471'>
+                            <name>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847391471' status='passed' stop='1618847391481'>
+                    <name>And the non-registered user is viewing the Home page </name>
+                    <title>And the non-registered user is viewing the Home page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847391471' status='passed' stop='1618847391481'>
+                            <name>I see in title "ManoMano: Online DIY, home improvement and gardening products"</name>
+                            <title>I see in title "ManoMano: Online DIY, home improvement and gardening products"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847391481' status='passed' stop='1618847391948'>
+                    <name>When the non-registered user enters the parameter "abcd1234*" that not match the existing products in the Search field </name>
+                    <title>When the non-registered user enters the parameter "abcd1234*" that not match the existing products in the Search field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847391481' status='passed' stop='1618847391948'>
+                            <name>I fill field "#searchbar", "abcd1234*"</name>
+                            <title>I fill field "#searchbar", "abcd1234*"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847391948' status='passed' stop='1618847396628'>
+                    <name>And the non-registered user clicks on the Search button </name>
+                    <title>And the non-registered user clicks on the Search button </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847391948' status='passed' stop='1618847393620'>
+                            <name>I click "#submit-form"</name>
+                            <title>I click "#submit-form"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847393621' status='passed' stop='1618847396628'>
+                            <name>I wait 3</name>
+                            <title>I wait 3</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847396628' status='passed' stop='1618847396631'>
+                    <name>Then the non-registered user confirms the Result page is displayed </name>
+                    <title>Then the non-registered user confirms the Result page is displayed </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847396628' status='passed' stop='1618847396631'>
+                            <name>I see in current url "search"</name>
+                            <title>I see in current url "search"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847396631' status='passed' stop='1618847396653'>
+                    <name>And the non-registered user confirms the "no products found" message is displayed </name>
+                    <title>And the non-registered user confirms the "no products found" message is displayed </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847396631' status='passed' stop='1618847396653'>
+                            <name>I see "no products found"</name>
+                            <title>I see "no products found"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1618847396675' status='passed' stop='1618847403394'>
+            <name>The non-registered user searches a parameter that matches the existing data</name>
+            <title>The non-registered user searches a parameter that matches the existing data</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1618847396680' status='passed' stop='1618847398049'>
+                    <name>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </name>
+                    <title>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847396680' status='passed' stop='1618847398042'>
+                            <name>I am on page "https://www.manomano.co.uk/"</name>
+                            <title>I am on page "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847398043' status='passed' stop='1618847398049'>
+                            <name>I wait url equals "https://www.manomano.co.uk/"</name>
+                            <title>I wait url equals "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847398049' status='passed' stop='1618847398228'>
+                    <name>And the non-registered user accepts the use of cookies </name>
+                    <title>And the non-registered user accepts the use of cookies </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847398049' status='passed' stop='1618847398057'>
+                            <name>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847398057' status='passed' stop='1618847398228'>
+                            <name>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847398228' status='passed' stop='1618847398230'>
+                    <name>And the non-registered user is viewing the Home page </name>
+                    <title>And the non-registered user is viewing the Home page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847398228' status='passed' stop='1618847398230'>
+                            <name>I see in title "ManoMano: Online DIY, home improvement and gardening products"</name>
+                            <title>I see in title "ManoMano: Online DIY, home improvement and gardening products"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847398230' status='passed' stop='1618847398440'>
+                    <name>When the non-registered user enters the parameter "Box" in the Search field </name>
+                    <title>When the non-registered user enters the parameter "Box" in the Search field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847398230' status='passed' stop='1618847398440'>
+                            <name>I fill field "#searchbar", "Box"</name>
+                            <title>I fill field "#searchbar", "Box"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847398440' status='passed' stop='1618847403382'>
+                    <name>And the non-registered user clicks on the Search button </name>
+                    <title>And the non-registered user clicks on the Search button </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847398440' status='passed' stop='1618847400378'>
+                            <name>I click "#submit-form"</name>
+                            <title>I click "#submit-form"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847400379' status='passed' stop='1618847403382'>
+                            <name>I wait 3</name>
+                            <title>I wait 3</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847403382' status='passed' stop='1618847403384'>
+                    <name>Then the non-registered user confirms the Result page is displayed </name>
+                    <title>Then the non-registered user confirms the Result page is displayed </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847403382' status='passed' stop='1618847403384'>
+                            <name>I see in current url "search"</name>
+                            <title>I see in current url "search"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847403384' status='passed' stop='1618847403394'>
+                    <name>And the non-registered user confirms the "Box" text is displayed according to the entered text in the search field </name>
+                    <title>And the non-registered user confirms the "Box" text is displayed according to the entered text in the search field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847403384' status='passed' stop='1618847403394'>
+                            <name>I see "Box"</name>
+                            <title>I see "Box"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1618847403400' status='passed' stop='1618847408764'>
+            <name>The non-registered user confirms the auto suggestion is displayed in the Search field</name>
+            <title>The non-registered user confirms the auto suggestion is displayed in the Search field</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1618847403410' status='passed' stop='1618847404870'>
+                    <name>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </name>
+                    <title>Given the non-registered user navigates to the URL: "https://www.manomano.co.uk/" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847403410' status='passed' stop='1618847404865'>
+                            <name>I am on page "https://www.manomano.co.uk/"</name>
+                            <title>I am on page "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847404865' status='passed' stop='1618847404870'>
+                            <name>I wait url equals "https://www.manomano.co.uk/"</name>
+                            <title>I wait url equals "https://www.manomano.co.uk/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847404870' status='passed' stop='1618847405039'>
+                    <name>And the non-registered user accepts the use of cookies </name>
+                    <title>And the non-registered user accepts the use of cookies </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847404870' status='passed' stop='1618847404879'>
+                            <name>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I grab number of visible elements "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847404879' status='passed' stop='1618847405039'>
+                            <name>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</name>
+                            <title>I click "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847405039' status='passed' stop='1618847405041'>
+                    <name>And the non-registered user is viewing the Home page </name>
+                    <title>And the non-registered user is viewing the Home page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847405039' status='passed' stop='1618847405041'>
+                            <name>I see in title "ManoMano: Online DIY, home improvement and gardening products"</name>
+                            <title>I see in title "ManoMano: Online DIY, home improvement and gardening products"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847405041' status='passed' stop='1618847405425'>
+                    <name>When the non-registered user enters the parameter "battery" in the Search field </name>
+                    <title>When the non-registered user enters the parameter "battery" in the Search field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847405041' status='passed' stop='1618847405425'>
+                            <name>I fill field "#searchbar", "battery"</name>
+                            <title>I fill field "#searchbar", "battery"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847405425' status='passed' stop='1618847405744'>
+                    <name>Then the non-registered user confirms the auto suggestion is displayed </name>
+                    <title>Then the non-registered user confirms the auto suggestion is displayed </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847405425' status='passed' stop='1618847405744'>
+                            <name>I see element "#query-suggestions-block"</name>
+                            <title>I see element "#query-suggestions-block"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1618847405744' status='passed' stop='1618847408764'>
+                    <name>And the non-registered user confirms the "battery" text is displayed in the auto suggestion list is according to the entered text in the search field </name>
+                    <title>And the non-registered user confirms the "battery" text is displayed in the auto suggestion list is according to the entered text in the search field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1618847405744' status='passed' stop='1618847408755'>
+                            <name>I wait 3</name>
+                            <title>I wait 3</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1618847408755' status='passed' stop='1618847408764'>
+                            <name>I see "battery", "#query-suggestions-block"</name>
+                            <title>I see "battery", "#query-suggestions-block"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
